@@ -1,5 +1,119 @@
-/*
-    Student Stylesheet
-    Add your CSS rules below.
-*/
+:root {
+    --bg-color: #f2f4f4;
+    --panel-color: #e4e7e2e9;
+    --primary-color: #03ff0b;
+    --secondary-color: #e5effa;
+    --accent-color: #ffb703;
+    --text-color: #1d2430;
+    --muted-color: #5f6c7b;
+    --border-color: #dfe7f1;
+    --shadow: 0 10px 24px rgba(28, 69, 107, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, var(--bg-color), #edf3fb 100%);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), #2d6fa8);
+    color: #fff;
+    padding: 2rem 1.5rem 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    letter-spacing: 0.04em;
+}
+
+nav {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+main {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 2rem auto;
+}
+
+section {
+    background: var(--panel-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 2rem 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+section p {
+    margin: 0;
+    max-width: 65ch;
+    color: var(--muted-color);
+    font-size: 1.05rem;
+}
+
+footer {
+    background: #eaf1f8;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: var(--muted-color);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 1.5rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
 
