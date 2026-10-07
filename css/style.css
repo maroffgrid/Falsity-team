@@ -1,186 +1,135 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-:root {
-    --bg-color: #e9c98f;
-    --panel-color: #e4e7e2e9;
-    --primary-color: #03ff0b;
-    --secondary-color: #e5effa;
-    --accent-color: #ffb703;
-    --text-color: #1d2430;
-    --muted-color: #5f6c7b;
-    --border-color: #dfe7f1;
-    --shadow: 0 10px 24px rgba(28, 69, 107, 0.08);
-}
+/* Shared styles */
+body {background-color: #4b5563; color: #374151; font-family: Arial, sans-serif; font-size: 18px; margin: 0;}
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, var(--bg-color), #edf3fb 100%);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-header {
-    background: linear-gradient(135deg, var(--primary-color), #2d6fa8);
-    color: #fff;
-    padding: 2rem 1.5rem 1.5rem;
-    box-shadow: var(--shadow);
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-    font-size: clamp(2rem, 4vw, 3.25rem);
-    letter-spacing: 0.04em;
-}
-
-nav {
-    margin-top: 1.25rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.6rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 999px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-nav a:hover,
-nav a:focus {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-1px);
-}
-
-main {
-    width: min(1100px, calc(100% - 2rem));
-    margin: 2rem auto;
-}
-
-section {
-    background: var(--panel-color);
-    border: 1px solid var(--border-color);
-    border-radius: 18px;
-    padding: 2rem 1.5rem;
-    box-shadow: var(--shadow);
-}
-
-section h2 {
-    margin-top: 0;
-    color: var(--primary-color);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-}
-
-section p {
-    margin: 0;
-    max-width: 65ch;
-    color: var(--muted-color);
-    font-size: 1.05rem;
-}
-
-footer {
-    background: #eaf1f8;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-    padding: 1.5rem 1rem;
-    color: var(--muted-color);
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.95rem;
-}
-
-@media (max-width: 600px) {
-    header {
-        padding-top: 1.5rem;
-    }
-
-    section {
-        padding: 1.5rem 1rem;
-    }
-
-    nav {
-        gap: 0.5rem;
-    }
-
-    nav a {
-        width: 100%;
-        text-align: center;
-    }
-=======
-body {
-    background-color: #fff8e8;
-    color: #263d2c;
-    font-family: Arial, sans-serif;
-    margin: 0;
->>>>>>> e7a55cb (Shamar's work)
-}
-
-header {
-    background-color: #176b4b;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-main {
-    margin: 30px auto;
-    max-width: 700px;
-    padding: 0 20px;
-}
-
-li {
+header, main, footer {
     background-color: white;
-    border: 1px solid #dddddd;
-    margin: 12px 0;
-    padding: 10px 15px;
+    border: 2px solid #8b5cf6;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #7c3aed;
+    font-size: 36px;
 }
 
 h2 {
-    color: #176b4b;
+    color: #db2777;
+    font-size: 28px;
 }
 
-footer {
-    background-color: #f2a044;
-    padding: 10px;
-    text-align: center;
+h3 {
+    color: #0891b2;
+    font-size: 22px;
 }
-=======
-/* Shared styles */
-body {background-color: #4b5563; color: #374151; font-family: Arial, sans-serif; font-size: 18px; margin: 0;}
-header, main, footer {background-color: white; border: 2px solid #8b5cf6;}
-header {text-align: center;}
-h1 {color: #7c3aed; font-size: 36px;}
-h2 {color: #db2777; font-size: 28px;}
-h3 {color: #0891b2; font-size: 22px;}
-a {color: #db2777;}
-body.rankings {display: flex; flex-direction: column; min-height: 100vh;}
-body.rankings header, body.rankings main {box-sizing: border-box; margin: 0; width: 100%;}
-body.rankings main {display: flex; flex: 1; flex-direction: column;}
-body.rankings ol {display: grid; flex: 1; gap: 10px; grid-template-columns: repeat(5, 1fr); list-style-position: inside; margin: 0 0 16px; padding: 0;}
-body.rankings li {background-color: #f3f4f6; border: 2px solid #8b5cf6; display: flex; flex-direction: column; margin: 0; padding: 10px;}
-body.rankings img {flex: 1; height: 100%; min-height: 0; object-fit: cover; width: 100%;}
-body.categories {min-height: 100vh;}
-body.categories header, body.categories main {box-sizing: border-box; margin: 20px auto; max-width: 900px; width: calc(100% - 40px);}
-body.categories header {padding: 10px 24px;}
-body.categories main {padding: 24px;}
-table {border-collapse: collapse; width: 100%;}
-th, td {border: 1px solid #8b5cf6; padding: 10px; text-align: left;}
-th {background-color: #8b5cf6; color: white;}
-body.categories tbody tr:nth-child(even) {background-color: #f3f4f6;}
-@media (max-width: 800px) 
-{body.rankings ol {grid-template-columns: repeat(2, 1fr);}
-body.rankings img {height: 30vh; flex: 0 0 30vh;}
-@media (max-width: 500px) 
-{body.rankings ol {grid-template-columns: 1fr;}
->>>>>>> 679d547 (Sharmar's Work)
+
+a {
+    color: #db2777;
+}
+
+/* Food rankings */
+body.rankings {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.rankings header, body.rankings main {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+body.rankings main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.rankings ol {
+    display: grid;
+    flex: 1;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-position: inside;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+body.rankings li {
+    background-color: #f3f4f6;
+    border: 2px solid #8b5cf6;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+}
+
+body.rankings img {
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Food categories */
+body.categories {
+    min-height: 100vh;
+}
+
+body.categories header, body.categories main {
+    box-sizing: border-box;
+    margin: 20px auto;
+    max-width: 900px;
+    width: calc(100% - 40px);
+}
+
+body.categories header {
+    padding: 10px 24px;
+}
+
+body.categories main {
+    padding: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #8b5cf6;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+body.categories tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    body.rankings ol {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body.rankings img {
+        height: 30vh;
+        flex: 0 0 30vh;
+    }
+}
+
+@media (max-width: 500px) {
+    body.rankings ol {
+        grid-template-columns: 1fr;
+    }
+}
