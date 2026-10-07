@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --bg-color: #e9c98f;
     --panel-color: #e4e7e2e9;
@@ -115,5 +116,41 @@ footer p {
         width: 100%;
         text-align: center;
     }
+=======
+body {
+    background-color: #fff8e8;
+    color: #263d2c;
+    font-family: Arial, sans-serif;
+    margin: 0;
+>>>>>>> e7a55cb (Shamar's work)
 }
 
+header {
+    background-color: #176b4b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+main {
+    margin: 30px auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #dddddd;
+    margin: 12px 0;
+    padding: 10px 15px;
+}
+
+h2 {
+    color: #176b4b;
+}
+
+footer {
+    background-color: #f2a044;
+    padding: 10px;
+    text-align: center;
+}
