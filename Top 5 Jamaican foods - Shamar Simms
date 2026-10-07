@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jamaican Food Rankings</title>
+
+</head>
+<body>
+    <header>
+        <h1>Jamaican Food Rankings</h1>
+        <p>This is MY top 5 list of Jamaican foods 🤤</p>
+    </header>
+
+    <main>
+        <h2>Top 5 Jamaican Foods</h2>
+        <ol>
+            <li>
+                <h3>Beef Patty 🥟 </h3>
+                <p>A flaky pastry filled with spicy beef.</p>
+            </li>
+            <li>
+                <h3>Jerk Chicken 🍗</h3>
+                <p>Spicy chicken cooked with Jamaican jerk seasoning.</p>
+            </li>
+            <li>
+                <h3> Curry Goat 🍛 </h3>
+                <p> Tender goat cooked with curry spices.</p>
+            </li>
+            <li>
+                <h3>Festival 🍞</h3>
+                <p>a traditional sweet fried cornmeal dumpling commonly served with jerk chicken or fish</p>
+            </li>
+            <li>
+                <h3>Rice and Peas 🍚</h3>
+                <p>A popular side dish made with rice, beans, and coconut milk.</p>
+            </li>
+            
+            <title>Jamaican Food Categories</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jamaican Food Categories</h1>
+        <p>See how the foods in my top five list are grouped.</p>
+    </header>
+
+    <main>
+        <table>
+            <caption>Foods from my top five list</caption>
+            <thead>
+                <tr>
+                    <th sope="col">Food</th>
+                    <th scope="col">Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beef Patty</td>
+                    <td>Pastry / snack</td>
+                </tr>
+                <tr>
+                    <td>Jerk Chicken</td>
+                    <td>Main dish</td>
+                </tr>
+                <tr>
+                    <td>Curry Goat</td>
+                    <td>Main dish</td>
+                </tr>
+                <tr>
+                    <td>Festival</td>
+                    <td>Side dish</td>
+                </tr>
+                <tr>
+                    <td>Rice and Peas</td>
+                    <td>Side dish</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="index.html">Back to the top five rankings</a></p>
+    </main>
+
+    <footer>
+        <p>What is your favorite Jamaican food?</p>
+    </footer>
+</body>
+        </ol>
+    </main>
+
+</body>
+</html>
